@@ -16,6 +16,13 @@
     justify-content: center;
 }
 
+.filter.popular:hover,
+.filter.now-playing:hover,
+.filter.top-rated:hover,
+.filter.upcoming:hover {
+    background-color: $hover;
+}
+
 ul {
     padding-inline-start: 0;
 }
@@ -32,4 +39,14 @@ li {
 .filter:active {
     background-color: $textColorLight;
 }
+
+.navSort {
+    width: 288px;
+
+    @media(min-width: 599px) {
+        width: 520px;
+    } 
+}
+
+
 

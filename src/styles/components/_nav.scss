@@ -7,7 +7,6 @@
     background-color: $backgroundColor;
     height: 0;
     overflow: hidden;
-    visibility: hidden;
     transition: height 0.5s ease, visibility 0s 0.5s;
 
     .show & {
@@ -23,23 +22,21 @@
     a {
         color: $textColorLight;
         text-decoration: none;
-        // display: block;
         line-height: 50px;
         font-size: 1.3em;
         font-weight: bold;
         padding: 0 12px;
+        text-transform: uppercase;
 
         &:hover,
         &:focus,
         &:active {
-            background-color: rgba(white, 0.2);
+            color: $accentColor;
         }
     }
 
     @media (min-width: 900px){
-        // position: absolute;
-        // top: 100px;
-        // left: 0;
+
         order: 9999;
     }
 

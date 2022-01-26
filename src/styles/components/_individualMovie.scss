@@ -1,137 +1,221 @@
-@import '../default/universalStyles.scss';
+@import "../default/universalStyles.scss";
 
 .indiv-poster-container {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
+
+.indiv-details {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
 .indiv-mass-poster {
-    max-width: 270px;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .indiv-movie-title {
-    font-family: $headerFont;
-    font-size: $mobileTitleFontSize;
-    color: $textColorLight;
-    margin: 0 auto;
+  font-family: $headerFont;
+  font-size: $hamburgerTextSize;
+  color: $textColorLight;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+
+.indiv-heart {
+  padding-top: 10px;
+  padding-left: 30px;
+  display: block;
+}
+
+.indiv-title-and-heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .indiv-movie-descrip {
-    font-family: $bodyFont;
-    font-size: $mobileBodyTextSize;
-    color: $textColorLight;
-    max-width: 70%;
-    margin: 0 auto;
-
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: left;
 }
-.indiv-release-date {
-    font-family: $bodyFont;
-    font-size: $mobileBodyTextSize;
-    color: $textColorLight;
-    text-align: center;
 
+.indiv-release-date {
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  text-align: center;
+}
+.indiv-language {
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  text-align: center;
 }
 .indiv-run-time {
-    font-family: $bodyFont;
-    font-size: $mobileBodyTextSize;
-    color: $textColorLight;
-    text-align: center;
-
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  text-align: center;
 }
 .indiv-view-rating {
-    font-family: $bodyFont;
-    font-size: $mobileBodyTextSize;
-    color: $textColorLight;
-    text-align: center;
-
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  text-align: center;
 }
 .indiv-movie-genre {
-    font-family: $bodyFont;
-    font-size: $mobileBodyTextSize;
-    color: $textColorLight;
-    text-align: center;
+  font-family: $bodyFont;
+  font-size: $mobileBodyTextSize;
+  color: $textColorLight;
+  text-align: center;
+}
 
+.hLineShort.indivline1 {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 520px) {
-    .indiv-movie-title {
-        font-family: $headerFont;
-        font-size: $mobileTitleFontSize;
-        color: $textColorLight;
-    }
-    
-    .indiv-movie-rating {
-        font-family: $headerFont;
-        font-size: $mobileTitleFontSize;
-        color: $textColorLight;
-    }
-    
-    .indiv-movie-descrip {
-        font-family: $bodyFont;
-        font-size: $mobileBodyTextSize;
-        color: $textColorLight;
-        max-width: 70%;
-        margin: 0 auto;
-    
-    }
-    .indiv-release-date {
-        font-family: $bodyFont;
-        font-size: $mobileBodyTextSize;
-        color: $textColorLight;
-        text-align: center;
-    
-    }
-    .indiv-run-time {
-        font-family: $bodyFont;
-        font-size: $mobileBodyTextSize;
-        color: $textColorLight;
-        text-align: center;
-    
-    }
-    .indiv-view-rating {
-        font-family: $bodyFont;
-        font-size: $mobileBodyTextSize;
-        color: $textColorLight;
-        text-align: center;
-    
-    }
-    .indiv-movie-genre {
-        font-family: $bodyFont;
-        font-size: $mobileBodyTextSize;
-        color: $textColorLight;
-        text-align: center;
-    
-    }
+  img.indiv-mass-poster {
+    max-width: 270px;
+    max-height: 405px;
+    margin-left: auto;
+    margin-right: auto;
+    // display: block;
+  }
+  .indiv-movie-title {
+    font-family: $headerFont;
+    font-size: $hamburgerTextSize;
+    color: $textColorLight;
+  }
+
+  .indiv-movie-rating {
+    font-family: $headerFont;
+    font-size: $mobileTitleFontSize;
+    color: $textColorLight;
+  }
+
+  .indiv-language {
+    font-family: $headerFont;
+    font-size: $mobileTitleFontSize;
+    color: $textColorLight;
+  }
+
+  .indiv-movie-descrip {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    max-width: 75%;
+    // margin: 0 auto;
+  }
+  .indiv-release-date {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    text-align: center;
+  }
+  .indiv-language {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    text-align: center;
+  }
+  .indiv-run-time {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    text-align: center;
+  }
+  .indiv-view-rating {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    text-align: center;
+  }
+  .indiv-movie-genre {
+    font-family: $bodyFont;
+    font-size: $mobileBodyTextSize;
+    color: $textColorLight;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1000px) {
-    .indiv-movie-title {
-        font-size: $headerFontSize;
-    }
-    
-    .indiv-movie-rating {
-        font-size: $bodyFontSize;
-    }
-    
-    .indiv-movie-descrip {
-        font-size: $bodyFontSize;
-        max-width: 70%;
-        margin: 0 auto;
-    
-    }
-    .indiv-release-date {
-        font-size: $bodyFontSize;
-    
-    }
-    .indiv-run-time {
-        font-size: $bodyFontSize;
+  //whole container
+  .indiv-poster-container {
+    display: grid;
+    grid-template-rows: 1px 100px 1fr 1fr 1px;
+    grid-template-columns: 450px 1fr;
+  }
+  // movie poster, left side span both rows
+  img.indiv-mass-poster {
+    max-width: 350px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    // display: block;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  // genre, legnth etc. needs to span across the bottom
+  .indiv-details {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    max-width: 80%;
+  }
+  // description paragraph, right side below title
+  .indiv-movie-descrip {
+    font-size: $bodyFontSize;
+    padding-top: 100px;
+    max-width: 75%;
+    margin: 0 auto;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  // movie title, right side above description paragraph
+  .indiv-movie-title {
+    font-size: $headerFontSize;
+    grid-row: 1;
+    grid-column: 2/3;
+  }
 
-    
-    }
-    .indiv-view-rating {
-        font-size: $bodyFontSize;
-    
-    }
-    .indiv-movie-genre {
-        font-size: $bodyFontSize;
-    
-    }
+  .indiv-heart{
+      padding-top: 10px;
+      padding-left: 30px;
+  }
+
+//   .indiv-title-and-heart{
+//   }
+
+  .indiv-movie-rating {
+    font-size: $bodyFontSize;
+  }
+
+  .indiv-release-date {
+    font-size: $bodyFontSize;
+  }
+  .indiv-run-time {
+    font-size: $bodyFontSize;
+  }
+
+  .indiv-view-rating {
+    font-size: $bodyFontSize;
+  }
+  .indiv-language {
+    font-size: $bodyFontSize;
+  }
+  .indiv-movie-genre {
+    font-size: $bodyFontSize;
+  }
+  .hLineShort.indivline1 {
+    display: none;
+  }
 }

@@ -28,9 +28,9 @@ function Header() {
             </div>    
             <Nav handleShowHideNav={showHideNav} />
             <div className='navSortParent'>
-            <div className='navSort'>
-                <NavSort />
-            </div>
+                <div className='navSort'>
+                    <NavSort />
+                </div>
             </div>
             <div className='hLine'></div>
         </header>

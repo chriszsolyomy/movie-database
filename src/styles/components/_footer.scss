@@ -1,25 +1,32 @@
-@use '../default/universalStyles' as *;
+@use "../default/universalStyles" as *;
 
 footer {
-    background-color: $backgroundColor;
-    color: $textColorLight;
-    text-align: center;
-    padding-bottom: 0.1rem;
-    font-family: $bodyFont;
+  background-color: $backgroundColor;
+  color: $textColorLight;
+  text-align: center;
+  // padding-bottom: 0.1rem;
+  font-family: $bodyFont;
+  padding: 4rem 0.5rem 0 0.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
 
-    .hLine {
-        height: 0.2rem;
-        width: 100%;
-        background-color: $accentColor;
-        margin-bottom: 1rem;
-    }
+  .hLine {
+    height: 0.2rem;
+    width: 100%;
+    background-color: $accentColor;
+    margin-bottom: 1rem;
+  }
 
-    span {
-        display: block;
-    }
+  .hLine2 {
+    height: 0.2rem;
+  }
 
+  span {
+    display: block;
+  }
 
+  @media (min-width: 382px) {
+    padding: 4rem 2rem 0 2rem;
+    padding-top: 50px;
+  }
 }
-
-
-

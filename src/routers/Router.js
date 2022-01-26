@@ -10,6 +10,7 @@ import Favourites from '../pages/Favourites';
 import IndividualMovie from '../pages/IndividualMovie';
 
 function AppRouter() {
+  
   return (
     <div className="wrapper">
       <Header />
@@ -24,7 +25,6 @@ function AppRouter() {
             <Route path="favourites" element={<Favourites />} />
             <Route path="movie/:id" element={<IndividualMovie />} />
           </Routes>
-
         </main>
       <Footer />
     </div>

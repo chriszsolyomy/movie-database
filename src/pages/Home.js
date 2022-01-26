@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import { API_KEY } from "../globals/Variables";
 import Movies from '../components/Movies';
 import '../styles/components/_moviePoster.scss';
-import NavSort from "../components/NavSort";
+
 
 
 

@@ -8,24 +8,18 @@ body {
 p {
     color:$textColorLight;
 }
-// p.movie-title {
-//     line-height: 0;
-// }
 
 .heart {
     padding: 3px;
     max-height: 20px;
     max-width: 24px;
-    // border: solid 1px white;
-    // border-radius: 50%;
-}
-.poster-container {
-    margin-bottom: 0;
+
 }
 
 .info-image-container {
     max-width: 230px;
     margin: 0 auto;
+    // z-index: -10;
 }
 
 .movie-info-container {
@@ -34,14 +28,50 @@ p {
     line-height: 0;
 }
 
-img.mass-poster {
+.poster-container {
     max-width: 269px;
-    max-height: 403px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.hover-container {
+    z-index: 10;
+    border: 2px solid pink;
+    padding: .5rem;
+    position: absolute;
+    width: 220px;
+    height: 340px; 
+    background-color: black;
+    opacity: 0%;
+
+    @media (min-width: 520px) {
+        
+    // z-index: 10;
+    // border: 2px solid pink;
+    // padding: .5rem;
+    // position: absolute;
+    width: 172px;
+    height: 261.5px;
+    background-color: black;
+    opacity: 0%;
+    }
+
+}
+
+
+.hover-container:hover {
+    opacity: 100%;
+
+    @media (min-width: 520px) {
+        z-index: 2000;
+        opacity: 100%;
+    }
+}
+
+
+img.mass-poster {
     border: 3px solid $accentColor;
-    margin-top: 3rem;
-    margin-bottom:.5rem;
+    width: 100%;
+    position: relative;
+    z-index: -10;
 }
 
 .title-icon-container {
@@ -51,8 +81,9 @@ img.mass-poster {
 
 @media (min-width: 520px) {
     .poster-container {
-        max-width: 270px;
-        max-height: 405px;
+        z-index: -8;
+        // max-width: 270px;
+        // max-height: 405px;
         display: flex;
         flex-wrap: wrap;
         margin: 20px 20px 0 20px;
@@ -60,11 +91,15 @@ img.mass-poster {
     .movie-container {
         display: flex;
         flex-wrap: wrap;
+        z-index: -1000;
         
     }
     img.mass-poster {
-        max-width: 185px;
-        max-height: 375px;
+        // max-width: 185px;
+        // max-height: 375px;
+        width: 100%;
+        position: relative;
+        z-index: -15;
     }
 
     .movie-title,
@@ -87,3 +122,21 @@ img.mass-poster {
         margin: 0 auto;
     }
 }
+
+// .noFavs{
+//     font-size: 2rem;
+//     // text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 70%;
+//     margin: 0 auto;
+//     height: 50vh;
+// }
+
+// .favourites-title {
+//     font-size: $titleFontSize;
+//     border-bottom: 2px solid $accentColor;
+//     width: 50%;
+//     margin-left: 5rem;
+// }
